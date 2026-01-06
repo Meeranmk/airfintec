@@ -1,0 +1,7 @@
+{
+  "name": "AirFinTec - ACHE Spares & Services",
+  "description": "Professional digital platform for Air-Fin Technical Services Pvt Ltd, showcasing expertise in Air-Cooled Heat Exchanger (ACHE) spares and specialized industrial services.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
