@@ -28,7 +28,7 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
               <span className="text-[#CC0000]">ACHE</span> Spares & Services
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 md:mb-10">
-              Address the market gap with over 20 years of expertise in heat transfer. Quality, speed, and reliability.
+              Ensuring cost-effective ACHE spares and services worldwide within the shortest timeframe, maintaining AVL compliance and unwavering quality.
             </p>
             <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
               <button
@@ -74,13 +74,17 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
               <h2 className="text-[#CC0000] font-bold text-sm uppercase tracking-widest mb-2">Our Story</h2>
               <h3 className="text-4xl font-bold text-gray-900 mb-6">Bridging the Gap in ACHE Spares & Services</h3>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Air-Fin Technical Services was founded by a group of industry veterans to address critical shortages in high-quality Air-Cooled Heat Exchanger components and maintenance expertise.
+                Air-Fin Technical Services was founded in 2024 by a cohesive group of professionals, each bringing over twenty years of experience within the Heat Transfer Industry. The company was established to address a notable gap in the market for Air-Cooled Heat Exchanger (ACHE) spares and specialized services including finned tube replacements.
+              </p>
+              <p className="text-base text-gray-600 mb-6 leading-relaxed">
+                Our team possesses comprehensive expertise across the full spectrum of industry operations:
               </p>
               <ul className="space-y-4 mb-8">
                 {[
+                  'Project Management & Planning',
                   'Procurement & Field Activities',
-                  'Finned Tube Specialized Replacements',
-                  'Comprehensive Pressure Part Services',
+                  'Finned Tube Replacements',
+                  'Pressure Parts Services',
                   'Fast-turnaround Supply Chain'
                 ].map((item, i) => (
                   <li key={i} className="flex items-center space-x-3 text-gray-700">
@@ -143,10 +147,14 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
         </div>
       </section>
 
-      {/* Why Choose Us */}
+      {/* Core Values */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="text-center mb-16">
+            <h2 className="text-[#CC0000] font-bold text-sm uppercase tracking-widest mb-2">Our Values</h2>
+            <h3 className="text-4xl font-bold text-gray-900 mb-4">What Drives Us</h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
             {CORE_VALUES.map((value, idx) => (
               <div key={idx} className="text-center">
                 <div className="mx-auto w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-6">

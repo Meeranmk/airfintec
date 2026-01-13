@@ -15,11 +15,14 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-6">
-              <span className="text-2xl font-bold text-white">AirFin</span>
-              <span className="text-2xl font-bold text-white opacity-60">Tec</span>
+              <img
+                src="/afts-logo.jpg"
+                alt="AFTS - Air-Fin Technical Services"
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Founded in 2024, Air-Fin Technical Services is dedicated to bridging the gap in the ACHE spares and specialized services market.
+              Founded in 2024, Air-Fin Technical Services Pvt Ltd is dedicated to bridging the gap in the ACHE spares and specialized services market.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="p-2 bg-gray-700 rounded-full hover:bg-[#CC0000] transition-colors">
@@ -40,7 +43,7 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
             <ul className="space-y-4 text-gray-400 text-sm">
               <li><button onClick={() => onPageChange(Page.About)} className="hover:text-white transition-colors">About Us</button></li>
               <li><button onClick={() => onPageChange(Page.Services)} className="hover:text-white transition-colors">Our Services</button></li>
-              <li><button onClick={() => onPageChange(Page.Calculators)} className="hover:text-white transition-colors">Calculators</button></li>
+              <li><button onClick={() => onPageChange(Page.Calculators)} className="hover:text-white transition-colors">Products</button></li>
               <li><button onClick={() => onPageChange(Page.Contact)} className="hover:text-white transition-colors">Contact Us</button></li>
             </ul>
           </div>
@@ -69,9 +72,9 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
             <h3 className="text-lg font-semibold mb-6">Newsletter</h3>
             <p className="text-gray-400 text-sm mb-4">Stay updated with industry insights and company news.</p>
             <form className="space-y-3">
-              <input 
-                type="email" 
-                placeholder="Your email address" 
+              <input
+                type="email"
+                placeholder="Your email address"
                 className="w-full bg-gray-700 border-none rounded-md px-4 py-2 text-white text-sm focus:ring-2 focus:ring-[#CC0000]"
               />
               <button className="w-full bg-[#CC0000] text-white py-2 rounded-md text-sm font-semibold hover:bg-red-700 transition-colors">
@@ -80,7 +83,7 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
             </form>
           </div>
         </div>
-        
+
         <div className="mt-16 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs">
           <p>© 2026 Air-Fin Technical Services Pvt Ltd. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">

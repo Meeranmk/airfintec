@@ -24,52 +24,55 @@ export const COLORS = {
 
 export const SERVICES: Service[] = [
   {
-    id: 'ache-spares',
-    title: 'ACHE Spares Supply',
-    description: 'Comprehensive range of components for all types of Air-Cooled Heat Exchangers.',
-    icon: 'Settings',
-    details: [
-      'Finned Tubes (L-Foot, G-Base, Extruded)',
-      'Fan Assemblies & Blades',
-      'Plugs & Gaskets',
-      'Tube Bundles',
-      'Structural Components'
-    ]
-  },
-  {
     id: 'finned-tube',
     title: 'Finned Tube Replacement',
-    description: 'Services for on-site or off-site replacement of critical finned tube sections.',
+    description: 'Rapid fin tube replacement services maximizing equipment uptime through specialized re-tubing processes.',
     icon: 'Wrench',
     details: [
-      'On-site Tube Extraction',
-      'Precise Installation',
-      'Testing & Certification',
-      'Custom Fabrication'
+      'Inspection and Preparation',
+      'Specialized Tube Removal',
+      'Fin Inspection and Repair',
+      'New Tube Installation',
+      'Pressure Testing & Certification'
     ]
   },
   {
-    id: 'technical-consulting',
-    title: 'Technical Consulting',
-    description: 'Expert advice from professionals with 20+ years of industry experience.',
-    icon: 'Lightbulb',
+    id: 'ache-erection',
+    title: 'ACHE Erection Services',
+    description: 'Comprehensive installation services leveraging deep expertise for efficient, precise setup and seamless startup.',
+    icon: 'Settings',
     details: [
-      'Performance Audits',
-      'Troubleshooting',
-      'Design Improvements',
-      'Project Planning'
+      'Foundation Preparation & Alignment',
+      'Structural Assembly',
+      'Tube Bundle Installation',
+      'Mechanical Equipment Setup',
+      'Pre-Commissioning & Testing'
     ]
   },
   {
-    id: 'maintenance',
-    title: 'Maintenance Services',
-    description: 'Predictive and preventive maintenance programs to ensure maximum uptime.',
+    id: 'supervision',
+    title: 'Supervision Services',
+    description: 'Expert supervision for ACHE erection and trial runs, managing every detail from scheduling to commissioning.',
     icon: 'ShieldCheck',
     details: [
-      'Cleaning & Descaling',
-      'Vibration Analysis',
-      'Coating Services',
-      'Structural Repairs'
+      'End-to-End Project Supervision',
+      'Manpower Planning & Coordination',
+      'Tools & Equipment Management',
+      'Quality Control & Inspection',
+      'Final Commissioning Support'
+    ]
+  },
+  {
+    id: 'ache-spares',
+    title: 'ACHE Spares Supply',
+    description: 'Comprehensive range of AVL-compliant components with thorough quality inspection and efficient delivery.',
+    icon: 'Truck',
+    details: [
+      'Finned Tubes & Headers',
+      'Plugs, Gaskets & Fasteners',
+      'Fans, Motors & Bearings',
+      'Belts, Pulleys & Guards',
+      'Complete Structural Components'
     ]
   }
 ];
@@ -77,23 +80,28 @@ export const SERVICES: Service[] = [
 export const CORE_VALUES = [
   {
     title: 'Quality First',
-    description: 'Never compromise on ACHE spares or services quality.',
+    description: 'Never compromise on ACHE spares or services quality, meeting AVL standards.',
     icon: <ShieldCheck className="w-8 h-8 text-[#CC0000]" />
   },
   {
     title: 'Customer Focus',
-    description: 'Understanding and meeting the needs of global clientele.',
+    description: 'Dedicated to rapidly meeting global client needs with cost-effective solutions.',
     icon: <Users className="w-8 h-8 text-[#CC0000]" />
   },
   {
     title: 'Integrity & Trust',
-    description: 'Operating with transparency and honesty in every deal.',
+    description: 'Operating with transparency and honesty in every deal and relationship.',
     icon: <Target className="w-8 h-8 text-[#CC0000]" />
   },
   {
     title: 'Efficiency & Speed',
-    description: 'Optimized supply chain to minimize client downtime.',
+    description: 'Optimized supply chain to minimize client downtime consistently.',
     icon: <Clock className="w-8 h-8 text-[#CC0000]" />
+  },
+  {
+    title: 'Global Responsibility',
+    description: 'Committed to sustainable and responsible business practices worldwide.',
+    icon: <Globe className="w-8 h-8 text-[#CC0000]" />
   }
 ];
 

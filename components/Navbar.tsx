@@ -15,7 +15,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onPageChange }) => {
     { label: 'Home', value: Page.Home },
     { label: 'About', value: Page.About },
     { label: 'Services', value: Page.Services },
-    { label: 'Calculators', value: Page.Calculators },
+    { label: 'Products', value: Page.Calculators },
     { label: 'Contact', value: Page.Contact },
   ];
 
@@ -29,8 +29,11 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onPageChange }) => {
               className="flex items-center cursor-pointer"
               onClick={() => onPageChange(Page.Home)}
             >
-              <span className="text-xl sm:text-2xl font-bold tracking-tighter text-[#CC0000]">AirFin</span>
-              <span className="text-xl sm:text-2xl font-bold tracking-tighter text-gray-800">Tec</span>
+              <img
+                src="/afts-logo.jpg"
+                alt="AFTS - Air-Fin Technical Services"
+                className="h-12 sm:h-14 w-auto"
+              />
             </div>
           </div>
 
