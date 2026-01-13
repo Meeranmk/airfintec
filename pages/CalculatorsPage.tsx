@@ -1,209 +1,173 @@
 
-import React, { useState } from 'react';
-import { Calculator, Clock, TrendingUp, Info } from 'lucide-react';
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-  Cell
-} from 'recharts';
+import React from 'react';
+import { Package, CheckCircle2, Wrench, Settings } from 'lucide-react';
 
 const CalculatorsPage: React.FC = () => {
-  const [activeCalc, setActiveCalc] = useState<'roi' | 'lead-time'>('roi');
-
-  // ROI Calculator State
-  const [investment, setInvestment] = useState(50000);
-  const [annualSavings, setAnnualSavings] = useState(15000);
-
-  const roi = (annualSavings / investment) * 100;
-  const payback = investment / annualSavings;
-
-  const roiChartData = [
-    { year: 'Year 1', value: annualSavings },
-    { year: 'Year 2', value: annualSavings * 2 },
-    { year: 'Year 3', value: annualSavings * 3 },
-    { year: 'Year 4', value: annualSavings * 4 },
-    { year: 'Year 5', value: annualSavings * 5 },
+  const productCategories = [
+    {
+      title: 'Finned Tubes',
+      icon: <Settings className="w-6 h-6" />,
+      description: 'High-quality finned tubes for optimal heat transfer'
+    },
+    {
+      title: 'Headers Boxes',
+      icon: <Package className="w-6 h-6" />,
+      description: 'Durable header boxes for ACHE systems'
+    },
+    {
+      title: 'Plug and Header Gaskets',
+      icon: <Settings className="w-6 h-6" />,
+      description: 'Precision-engineered gaskets for leak-free operation'
+    },
+    {
+      title: 'Plugs (Single & Double)',
+      icon: <Wrench className="w-6 h-6" />,
+      description: 'Reliable plugs for tube sealing'
+    },
+    {
+      title: 'Studs & Fasteners',
+      icon: <Settings className="w-6 h-6" />,
+      description: 'High-strength fastening solutions'
+    },
+    {
+      title: 'Tube Bundle Inserts/Turbulators',
+      icon: <Package className="w-6 h-6" />,
+      description: 'Enhanced heat transfer components'
+    },
+    {
+      title: 'Bearing Blocks',
+      icon: <Wrench className="w-6 h-6" />,
+      description: 'Forced & Induced bearing blocks'
+    },
+    {
+      title: 'Belts & Pulleys',
+      icon: <Settings className="w-6 h-6" />,
+      description: 'Precision drive components'
+    },
+    {
+      title: 'Fans and Motors',
+      icon: <Package className="w-6 h-6" />,
+      description: 'High-performance cooling systems'
+    },
+    {
+      title: 'Anti-Rotation Devices',
+      icon: <Wrench className="w-6 h-6" />,
+      description: 'Secure mounting solutions'
+    },
+    {
+      title: 'Louvers',
+      icon: <Settings className="w-6 h-6" />,
+      description: 'Airflow control components'
+    },
+    {
+      title: 'ACHE Support Structures',
+      icon: <Package className="w-6 h-6" />,
+      description: 'Robust structural components'
+    },
+    {
+      title: 'Motor Suspension Assemblies',
+      icon: <Wrench className="w-6 h-6" />,
+      description: 'Vibration-dampening mounting systems'
+    },
+    {
+      title: 'Plenum Chambers',
+      icon: <Settings className="w-6 h-6" />,
+      description: 'Conical & Box Type configurations'
+    },
+    {
+      title: 'Guards',
+      icon: <Package className="w-6 h-6" />,
+      description: 'Fin, Fan & Pulley safety guards'
+    }
   ];
 
   return (
     <div className="pt-32 pb-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-[#CC0000] font-bold text-sm uppercase tracking-widest mb-2">Resource Center</h2>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Industrial & Financial Tools</h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Utilize our professional tools to estimate project timelines and financial returns for ACHE maintenance projects.
+          <h2 className="text-[#CC0000] font-bold text-sm uppercase tracking-widest mb-2">Our Products</h2>
+          <h1 className="text-4xl font-bold text-gray-900 mb-6">ACHE Spares</h1>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
+            AFTS specializes in the sourcing and supply of high-quality Air Cooled Heat Exchanger (ACHE) spares,
+            ensuring all components meet approved vendor list standards and are thoroughly inspected by our engineers
+            for quality control.
           </p>
-        </div>
-
-        {/* Tabs */}
-        <div className="flex justify-center mb-12">
-          <div className="bg-gray-100 p-1 rounded-lg flex space-x-1">
-            <button
-              onClick={() => setActiveCalc('roi')}
-              className={`flex items-center space-x-2 px-6 py-2 rounded-md font-semibold transition-all ${activeCalc === 'roi' ? 'bg-white text-[#CC0000] shadow-sm' : 'text-gray-500 hover:text-gray-700'}`}
-            >
-              <TrendingUp className="w-5 h-5" />
-              <span>Maintenance ROI</span>
-            </button>
-            <button
-              onClick={() => setActiveCalc('lead-time')}
-              className={`flex items-center space-x-2 px-6 py-2 rounded-md font-semibold transition-all ${activeCalc === 'lead-time' ? 'bg-white text-[#CC0000] shadow-sm' : 'text-gray-500 hover:text-gray-700'}`}
-            >
-              <Clock className="w-5 h-5" />
-              <span>Lead Time Estimator</span>
-            </button>
+          <div className="flex flex-wrap justify-center gap-4 text-sm">
+            <div className="flex items-center space-x-2 bg-red-50 px-4 py-2 rounded-full">
+              <CheckCircle2 className="w-5 h-5 text-[#CC0000]" />
+              <span className="font-semibold text-gray-700">AVL Compliant</span>
+            </div>
+            <div className="flex items-center space-x-2 bg-red-50 px-4 py-2 rounded-full">
+              <CheckCircle2 className="w-5 h-5 text-[#CC0000]" />
+              <span className="font-semibold text-gray-700">Quality Inspected</span>
+            </div>
+            <div className="flex items-center space-x-2 bg-red-50 px-4 py-2 rounded-full">
+              <CheckCircle2 className="w-5 h-5 text-[#CC0000]" />
+              <span className="font-semibold text-gray-700">Fast Delivery</span>
+            </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Controls Column */}
-          <div className="lg:col-span-1 bg-gray-50 p-8 rounded-xl border border-gray-100">
-            {activeCalc === 'roi' ? (
-              <div className="space-y-8">
-                <div>
-                  <label className="block text-sm font-bold text-gray-700 mb-3 uppercase tracking-wider">
-                    Initial Investment (₹)
-                  </label>
-                  <input
-                    type="range"
-                    min="5000"
-                    max="500000"
-                    step="5000"
-                    value={investment}
-                    onChange={(e) => setInvestment(Number(e.target.value))}
-                    className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#CC0000]"
-                  />
-                  <div className="mt-4 text-2xl font-bold text-gray-900">
-                    ₹{investment.toLocaleString()}
+        {/* Product Categories Grid */}
+        <div className="mb-20">
+          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Comprehensive Component Range</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {productCategories.map((category, index) => (
+              <div
+                key={index}
+                className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-[#CC0000] transition-all group"
+              >
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center text-[#CC0000] group-hover:bg-[#CC0000] group-hover:text-white transition-colors flex-shrink-0">
+                    {category.icon}
                   </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-bold text-gray-700 mb-3 uppercase tracking-wider">
-                    Expected Annual Savings (₹)
-                  </label>
-                  <input
-                    type="range"
-                    min="1000"
-                    max="200000"
-                    step="1000"
-                    value={annualSavings}
-                    onChange={(e) => setAnnualSavings(Number(e.target.value))}
-                    className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#CC0000]"
-                  />
-                  <div className="mt-4 text-2xl font-bold text-gray-900">
-                    ₹{annualSavings.toLocaleString()}
-                  </div>
-                </div>
-
-                <div className="pt-6 border-t border-gray-200">
-                  <div className="flex items-center space-x-2 text-gray-500 mb-4">
-                    <Info className="w-4 h-4" />
-                    <span className="text-xs">Based on efficiency gains and reduced downtime metrics.</span>
+                  <div>
+                    <h4 className="font-bold text-gray-900 mb-2">{category.title}</h4>
+                    <p className="text-sm text-gray-600">{category.description}</p>
                   </div>
                 </div>
               </div>
-            ) : (
-              <div className="space-y-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Supply Chain Estimator</h3>
-                <div>
-                  <label className="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wider">Product Category</label>
-                  <select className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#CC0000] outline-none">
-                    <option>Finned Tubes (Stock)</option>
-                    <option>Finned Tubes (Custom)</option>
-                    <option>Fan Blades</option>
-                    <option>Plugs & Gaskets</option>
-                    <option>Structural Parts</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wider">Order Quantity</label>
-                  <input type="number" defaultValue={100} className="w-full p-3 border border-gray-300 rounded-md outline-none" />
-                </div>
-                <div>
-                  <label className="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wider">Shipping Region</label>
-                  <select className="w-full p-3 border border-gray-300 rounded-md outline-none">
-                    <option>Middle East</option>
-                    <option>Southeast Asia</option>
-                    <option>Europe</option>
-                    <option>Americas</option>
-                  </select>
-                </div>
-                <button className="w-full bg-[#CC0000] text-white py-3 rounded-md font-bold hover:bg-red-700 transition-colors">
-                  Calculate Lead Time
-                </button>
-              </div>
-            )}
+            ))}
           </div>
+        </div>
 
-          {/* Visualization Column */}
-          <div className="lg:col-span-2 space-y-8">
-            {activeCalc === 'roi' ? (
-              <>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="bg-white p-6 rounded-xl border-2 border-red-50 shadow-sm">
-                    <p className="text-sm font-bold text-gray-500 uppercase mb-1">Return on Investment</p>
-                    <p className="text-4xl font-bold text-[#CC0000]">{roi.toFixed(1)}%</p>
-                  </div>
-                  <div className="bg-white p-6 rounded-xl border-2 border-red-50 shadow-sm">
-                    <p className="text-sm font-bold text-gray-500 uppercase mb-1">Payback Period</p>
-                    <p className="text-4xl font-bold text-gray-900">{payback.toFixed(1)} Years</p>
-                  </div>
-                </div>
+        {/* Quality Assurance Section */}
+        <div className="bg-gray-50 rounded-xl p-8 md:p-12 mb-20">
+          <div className="max-w-3xl mx-auto text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Quality Assurance & Delivery</h3>
+            <p className="text-gray-600 leading-relaxed">
+              AFTS leverages its robust vendor network to guarantee high-quality, inspected components with efficient
+              delivery times. Every component undergoes rigorous quality control checks by our experienced engineers
+              to ensure it meets or exceeds industry standards.
+            </p>
+          </div>
+        </div>
 
-                <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
-                  <h4 className="text-lg font-bold text-gray-900 mb-8 flex items-center space-x-2">
-                    <Calculator className="w-5 h-5 text-[#CC0000]" />
-                    <span>Projected Cumulative Savings</span>
-                  </h4>
-                  <div className="h-80 w-full">
-                    <ResponsiveContainer width="100%" height="100%">
-                      <BarChart data={roiChartData}>
-                        <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#F0F0F0" />
-                        <XAxis dataKey="year" axisLine={false} tickLine={false} />
-                        <YAxis axisLine={false} tickLine={false} tickFormatter={(val) => `₹${val / 1000}k`} />
-                        <Tooltip cursor={{ fill: 'transparent' }} />
-                        <Bar dataKey="value" radius={[4, 4, 0, 0]}>
-                          {roiChartData.map((entry, index) => (
-                            <Cell key={`cell-${index}`} fill={index === roiChartData.length - 1 ? '#CC0000' : '#333333'} />
-                          ))}
-                        </Bar>
-                      </BarChart>
-                    </ResponsiveContainer>
-                  </div>
-                </div>
-              </>
-            ) : (
-              <div className="bg-gray-50 p-12 rounded-xl border border-gray-200 flex flex-col items-center justify-center text-center">
-                <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-md mb-6">
-                  <Clock className="w-12 h-12 text-[#CC0000]" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Estimated Lead Time: 4-6 Weeks</h3>
-                <p className="text-gray-600 mb-8 max-w-md">
-                  This estimate includes production time, quality certification (AVL compliant), and standard air freight to your region.
-                </p>
-                <div className="w-full max-w-lg space-y-4">
-                  <div className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
-                    <span className="font-semibold text-gray-700">Production</span>
-                    <span className="text-sm font-bold text-green-600">3 Weeks</span>
-                  </div>
-                  <div className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
-                    <span className="font-semibold text-gray-700">AVL Certification</span>
-                    <span className="text-sm font-bold text-green-600">1 Week</span>
-                  </div>
-                  <div className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
-                    <span className="font-semibold text-gray-700">Logistics</span>
-                    <span className="text-sm font-bold text-[#CC0000]">1-2 Weeks</span>
-                  </div>
-                </div>
+        {/* Additional Services */}
+        <div className="border-t border-gray-200 pt-16">
+          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Additional Services</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white border-2 border-gray-200 rounded-lg p-8 text-center">
+              <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Wrench className="w-8 h-8 text-[#CC0000]" />
               </div>
-            )}
+              <h4 className="text-xl font-bold text-gray-900 mb-3">Fin Cleaning Services</h4>
+              <p className="text-gray-600 mb-4">Professional cleaning services for optimal ACHE performance</p>
+              <span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-3 py-1 rounded-full">
+                Coming Soon
+              </span>
+            </div>
+            <div className="bg-white border-2 border-[#CC0000] rounded-lg p-8 text-center">
+              <div className="w-16 h-16 bg-[#CC0000] rounded-full flex items-center justify-center mx-auto mb-4">
+                <Package className="w-8 h-8 text-white" />
+              </div>
+              <h4 className="text-xl font-bold text-gray-900 mb-3">Custom Orders</h4>
+              <p className="text-gray-600 mb-4">Need a specific component? Contact us for custom procurement</p>
+              <button className="bg-[#CC0000] text-white px-6 py-2 rounded-md font-semibold hover:bg-red-700 transition-colors">
+                Get Quote
+              </button>
+            </div>
           </div>
         </div>
       </div>

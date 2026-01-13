@@ -6,6 +6,7 @@ import FloatingWhatsApp from './components/FloatingWhatsApp';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import CalculatorsPage from './pages/CalculatorsPage';
+import ServicesPage from './pages/ServicesPage';
 import { Page } from './types';
 
 const App: React.FC = () => {
@@ -48,25 +49,7 @@ const App: React.FC = () => {
           </div>
         );
       case Page.Services:
-        return (
-          <div className="pt-32 pb-24 px-4 max-w-7xl mx-auto">
-            <h1 className="text-4xl font-bold mb-8">Our Technical Services</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {[
-                { title: "Finned Tube Replacement", desc: "Specialized removal and installation of high-efficiency finned tubes." },
-                { title: "ACHE Spares Supply", desc: "Global distribution of AVL-approved plugs, gaskets, fans, and bundles." },
-                { title: "Field Performance Audits", desc: "On-site testing to identify bottlenecks in your cooling processes." },
-                { title: "Project Consulting", desc: "Management and planning for large-scale heat exchanger overhauls." }
-              ].map((s, i) => (
-                <div key={i} className="p-8 border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-md transition-shadow">
-                  <h3 className="text-xl font-bold mb-3">{s.title}</h3>
-                  <p className="text-gray-600 mb-4">{s.desc}</p>
-                  <button onClick={() => setCurrentPage(Page.Contact)} className="text-[#CC0000] font-bold">Inquire &rarr;</button>
-                </div>
-              ))}
-            </div>
-          </div>
-        );
+        return <ServicesPage />;
       default:
         return <Home onPageChange={setCurrentPage} />;
     }
@@ -75,7 +58,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col font-sans selection:bg-red-100 selection:text-[#CC0000]">
       <Navbar currentPage={currentPage} onPageChange={setCurrentPage} />
-      
+
       <main className="flex-grow">
         {renderPage()}
       </main>
