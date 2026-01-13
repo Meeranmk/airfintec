@@ -1,11 +1,11 @@
 
 import React from 'react';
-import { 
-  Wrench, 
-  Settings, 
-  Lightbulb, 
-  ShieldCheck, 
-  Truck, 
+import {
+  Wrench,
+  Settings,
+  Lightbulb,
+  ShieldCheck,
+  Truck,
   Clock,
   Briefcase,
   Users,
@@ -26,7 +26,7 @@ export const SERVICES: Service[] = [
   {
     id: 'ache-spares',
     title: 'ACHE Spares Supply',
-    description: 'Comprehensive range of high-quality components for all types of Air-Cooled Heat Exchangers.',
+    description: 'Comprehensive range of components for all types of Air-Cooled Heat Exchangers.',
     icon: 'Settings',
     details: [
       'Finned Tubes (L-Foot, G-Base, Extruded)',
@@ -39,7 +39,7 @@ export const SERVICES: Service[] = [
   {
     id: 'finned-tube',
     title: 'Finned Tube Replacement',
-    description: 'Specialized services for on-site or off-site replacement of critical finned tube sections.',
+    description: 'Services for on-site or off-site replacement of critical finned tube sections.',
     icon: 'Wrench',
     details: [
       'On-site Tube Extraction',
@@ -75,25 +75,25 @@ export const SERVICES: Service[] = [
 ];
 
 export const CORE_VALUES = [
-  { 
-    title: 'Quality First', 
-    description: 'Never compromise on ACHE spares or services quality.', 
-    icon: <ShieldCheck className="w-8 h-8 text-[#CC0000]" /> 
+  {
+    title: 'Quality First',
+    description: 'Never compromise on ACHE spares or services quality.',
+    icon: <ShieldCheck className="w-8 h-8 text-[#CC0000]" />
   },
-  { 
-    title: 'Customer Focus', 
-    description: 'Understanding and meeting the needs of global clientele.', 
-    icon: <Users className="w-8 h-8 text-[#CC0000]" /> 
+  {
+    title: 'Customer Focus',
+    description: 'Understanding and meeting the needs of global clientele.',
+    icon: <Users className="w-8 h-8 text-[#CC0000]" />
   },
-  { 
-    title: 'Integrity & Trust', 
-    description: 'Operating with transparency and honesty in every deal.', 
-    icon: <Target className="w-8 h-8 text-[#CC0000]" /> 
+  {
+    title: 'Integrity & Trust',
+    description: 'Operating with transparency and honesty in every deal.',
+    icon: <Target className="w-8 h-8 text-[#CC0000]" />
   },
-  { 
-    title: 'Efficiency & Speed', 
-    description: 'Optimized supply chain to minimize client downtime.', 
-    icon: <Clock className="w-8 h-8 text-[#CC0000]" /> 
+  {
+    title: 'Efficiency & Speed',
+    description: 'Optimized supply chain to minimize client downtime.',
+    icon: <Clock className="w-8 h-8 text-[#CC0000]" />
   }
 ];
 

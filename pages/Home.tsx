@@ -15,8 +15,8 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
       <section className="relative h-screen flex items-center pt-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="/ACHE 2.png"
-            alt="Air-Cooled Heat Exchanger at Dusk"
+            src="/REFINERY 2.jpg"
+            alt="Industrial Refinery Complex"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/60"></div>
@@ -25,10 +25,10 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <div className="max-w-3xl">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-4 sm:mb-6">
-              Excellence in <span className="text-[#CC0000]">ACHE</span> Spares & Services
+              <span className="text-[#CC0000]">ACHE</span> Spares & Services
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 md:mb-10">
-              Address the market gap with over 20 years of expertise in heat transfer. Quality, speed, and reliability globally.
+              Address the market gap with over 20 years of expertise in heat transfer. Quality, speed, and reliability.
             </p>
             <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
               <button
@@ -72,13 +72,13 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-[#CC0000] font-bold text-sm uppercase tracking-widest mb-2">Our Story</h2>
-              <h3 className="text-4xl font-bold text-gray-900 mb-6">Bridging the Gap in Technical Heat Transfer Services</h3>
+              <h3 className="text-4xl font-bold text-gray-900 mb-6">Bridging the Gap in ACHE Spares & Services</h3>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Air-Fin Technical Services was founded by a group of industry veterans to address critical shortages in high-quality Air-Cooled Heat Exchanger components and maintenance expertise.
               </p>
               <ul className="space-y-4 mb-8">
                 {[
-                  'Project Management & Procurement',
+                  'Procurement & Field Activities',
                   'Finned Tube Specialized Replacements',
                   'Comprehensive Pressure Part Services',
                   'Fast-turnaround Supply Chain'
@@ -103,10 +103,6 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
                 alt="Large-Scale ACHE Installation"
                 className="rounded-lg shadow-2xl w-full"
               />
-              <div className="absolute -bottom-8 -left-8 bg-[#CC0000] text-white p-8 rounded-lg hidden md:block">
-                <p className="text-4xl font-bold mb-1">99.9%</p>
-                <p className="text-sm font-medium opacity-80 uppercase">Quality Accuracy</p>
-              </div>
             </div>
           </div>
         </div>
@@ -117,9 +113,9 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-[#CC0000] font-bold text-sm uppercase tracking-widest mb-2">Our Expertise</h2>
-            <h3 className="text-4xl font-bold text-gray-900 mb-4">Specialized ACHE Solutions</h3>
+            <h3 className="text-4xl font-bold text-gray-900 mb-4">Specialized ACHE Spares & Services</h3>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We provide world-class spares and services tailored to the oil, gas, and petrochemical sectors.
+              We provide spares and services tailored to the oil, gas, and petrochemical sectors.
             </p>
           </div>
 
@@ -160,72 +156,6 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
                 <p className="text-gray-600 text-sm">{value.description}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Product Showcase */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-[#CC0000] font-bold text-sm uppercase tracking-widest mb-2">Our Products</h2>
-            <h3 className="text-4xl font-bold text-gray-900 mb-4">Premium ACHE Components</h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              High-quality spare parts and components engineered for reliability and performance
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Tube Bundles */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow group">
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src="/TB 2.jpg"
-                  alt="Finned Tube Bundles"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-2">Finned Tube Bundles</h4>
-                <p className="text-gray-600 text-sm">
-                  Precision-engineered tube bundles with optimal heat transfer efficiency
-                </p>
-              </div>
-            </div>
-
-            {/* Timing Belt Pulleys */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow group">
-              <div className="aspect-[4/3] overflow-hidden bg-gray-100 flex items-center justify-center">
-                <img
-                  src="/PULLEY 1.webp"
-                  alt="Timing Belt Pulley"
-                  className="w-3/4 h-3/4 object-contain group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-2">Timing Belt Pulleys</h4>
-                <p className="text-gray-600 text-sm">
-                  Durable pulleys designed for consistent performance and longevity
-                </p>
-              </div>
-            </div>
-
-            {/* ACHE Installation */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow group">
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src="/ACHE 3.jpg"
-                  alt="ACHE Installation"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-2">Complete ACHE Systems</h4>
-                <p className="text-gray-600 text-sm">
-                  Full-scale air-cooled heat exchanger installations and replacements
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
