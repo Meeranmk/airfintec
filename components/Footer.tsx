@@ -14,12 +14,16 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div>
-            <div className="flex items-center mb-6">
+            <div className="flex items-center space-x-3 mb-6">
               <img
                 src="/afts-logo.jpg"
                 alt="AFTS - Air-Fin Technical Services"
                 className="h-12 w-auto"
               />
+              <span className="text-xl sm:text-2xl font-bold">
+                <span className="text-orange-500">Air-Fin</span>
+                <span className="text-blue-400"> Tech</span>
+              </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Founded in 2024, Air-Fin Technical Services Pvt Ltd is dedicated to bridging the gap in the ACHE spares and specialized services market.

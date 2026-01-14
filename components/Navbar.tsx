@@ -34,7 +34,10 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onPageChange }) => {
                 alt="AFTS - Air-Fin Technical Services"
                 className="h-12 sm:h-14 w-auto"
               />
-              <span className="text-xl sm:text-2xl font-bold text-gray-900">Air-Fin Tech</span>
+              <span className="text-xl sm:text-2xl font-bold">
+                <span className="text-orange-500">Air-Fin</span>
+                <span className="text-blue-600"> Tech</span>
+              </span>
             </div>
           </div>
 
