@@ -15,7 +15,7 @@ import {
 import { Service } from './types';
 
 export const COLORS = {
-  primary: '#CC0000',
+  primary: '#FF8C00',
   darkGray: '#333333',
   lightGray: '#F5F5F5',
   mediumGray: '#666666',
@@ -81,27 +81,27 @@ export const CORE_VALUES = [
   {
     title: 'Quality First',
     description: 'Never compromise on ACHE spares or services quality, meeting AVL standards.',
-    icon: <ShieldCheck className="w-8 h-8 text-[#CC0000]" />
+    icon: <ShieldCheck className="w-8 h-8 text-[#FF8C00]" />
   },
   {
     title: 'Customer Focus',
     description: 'Dedicated to rapidly meeting global client needs with cost-effective solutions.',
-    icon: <Users className="w-8 h-8 text-[#CC0000]" />
+    icon: <Users className="w-8 h-8 text-[#FF8C00]" />
   },
   {
     title: 'Integrity & Trust',
     description: 'Operating with transparency and honesty in every deal and relationship.',
-    icon: <Target className="w-8 h-8 text-[#CC0000]" />
+    icon: <Target className="w-8 h-8 text-[#FF8C00]" />
   },
   {
     title: 'Efficiency & Speed',
     description: 'Optimized supply chain to minimize client downtime consistently.',
-    icon: <Clock className="w-8 h-8 text-[#CC0000]" />
+    icon: <Clock className="w-8 h-8 text-[#FF8C00]" />
   },
   {
     title: 'Global Responsibility',
     description: 'Committed to sustainable and responsible business practices worldwide.',
-    icon: <Globe className="w-8 h-8 text-[#CC0000]" />
+    icon: <Globe className="w-8 h-8 text-[#FF8C00]" />
   }
 ];
 

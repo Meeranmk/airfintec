@@ -25,7 +25,7 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <div className="max-w-3xl">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-4 sm:mb-6">
-              <span className="text-[#CC0000]">ACHE</span> Spares & Services
+              <span className="text-[#FF8C00]">ACHE</span> Spares & Services
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 md:mb-10">
               Ensuring cost-effective ACHE spares and services worldwide within the shortest timeframe, maintaining AVL compliance and unwavering quality.
@@ -33,14 +33,14 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
             <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
               <button
                 onClick={() => onPageChange(Page.Contact)}
-                className="bg-[#CC0000] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-bold hover:bg-red-700 transition-all flex items-center justify-center space-x-2"
+                className="bg-[#FF8C00] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-bold hover:bg-orange-600 transition-all flex items-center justify-center space-x-2"
               >
                 <span>Get a Quote</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
               <button
                 onClick={() => onPageChange(Page.Services)}
-                className="bg-white text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-bold hover:bg-gray-100 transition-all"
+                className="bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-bold hover:bg-blue-700 transition-all"
               >
                 View Services
               </button>
@@ -71,7 +71,7 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-[#CC0000] font-bold text-sm uppercase tracking-widest mb-2">Our Story</h2>
+              <h2 className="text-[#FF8C00] font-bold text-sm uppercase tracking-widest mb-2">Our Story</h2>
               <h3 className="text-4xl font-bold text-gray-900 mb-6">Bridging the Gap in ACHE Spares & Services</h3>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Air-Fin Technical Services was founded in 2024 by a cohesive group of professionals, each bringing over twenty years of experience within the Heat Transfer Industry. The company was established to address a notable gap in the market for Air-Cooled Heat Exchanger (ACHE) spares and specialized services including finned tube replacements.
@@ -88,14 +88,14 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
                   'Fast-turnaround Supply Chain'
                 ].map((item, i) => (
                   <li key={i} className="flex items-center space-x-3 text-gray-700">
-                    <CheckCircle2 className="w-5 h-5 text-[#CC0000]" />
+                    <CheckCircle2 className="w-5 h-5 text-[#FF8C00]" />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
               <button
                 onClick={() => onPageChange(Page.About)}
-                className="text-[#CC0000] font-bold flex items-center space-x-2 hover:translate-x-2 transition-transform underline underline-offset-4"
+                className="text-[#FF8C00] font-bold flex items-center space-x-2 hover:translate-x-2 transition-transform underline underline-offset-4"
               >
                 <span>Read Our Full Story</span>
                 <ArrowRight className="w-5 h-5" />
@@ -116,7 +116,7 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[#CC0000] font-bold text-sm uppercase tracking-widest mb-2">Our Expertise</h2>
+            <h2 className="text-[#FF8C00] font-bold text-sm uppercase tracking-widest mb-2">Our Expertise</h2>
             <h3 className="text-4xl font-bold text-gray-900 mb-4">Specialized ACHE Spares & Services</h3>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               We provide spares and services tailored to the oil, gas, and petrochemical sectors.
@@ -129,14 +129,14 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
                 key={service.id}
                 className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-xl transition-shadow group"
               >
-                <div className="w-14 h-14 bg-red-50 text-[#CC0000] rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#CC0000] group-hover:text-white transition-colors">
+                <div className="w-14 h-14 bg-orange-50 text-[#FF8C00] rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#FF8C00] group-hover:text-white transition-colors">
                   {getIcon(service.icon)}
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h4>
                 <p className="text-gray-600 text-sm mb-6 leading-relaxed">{service.description}</p>
                 <button
                   onClick={() => onPageChange(Page.Services)}
-                  className="text-gray-900 font-semibold text-sm flex items-center space-x-2 group-hover:text-[#CC0000] transition-colors"
+                  className="text-gray-900 font-semibold text-sm flex items-center space-x-2 group-hover:text-[#FF8C00] transition-colors"
                 >
                   <span>Learn More</span>
                   <ArrowRight className="w-4 h-4" />
@@ -151,13 +151,13 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[#CC0000] font-bold text-sm uppercase tracking-widest mb-2">Our Values</h2>
+            <h2 className="text-[#FF8C00] font-bold text-sm uppercase tracking-widest mb-2">Our Values</h2>
             <h3 className="text-4xl font-bold text-gray-900 mb-4">What Drives Us</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
             {CORE_VALUES.map((value, idx) => (
               <div key={idx} className="text-center">
-                <div className="mx-auto w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-6">
+                <div className="mx-auto w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mb-6">
                   {value.icon}
                 </div>
                 <h4 className="text-lg font-bold text-gray-900 mb-3">{value.title}</h4>
@@ -177,7 +177,7 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
             alt="Industrial Refinery"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-[#CC0000]/85"></div>
+          <div className="absolute inset-0 bg-[#FF8C00]/85"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-3xl font-bold mb-6">Serving the World's Toughest Industries</h3>
@@ -204,7 +204,7 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
           <div className="flex justify-center space-x-4">
             <button
               onClick={() => onPageChange(Page.Contact)}
-              className="bg-[#CC0000] text-white px-10 py-4 rounded-md text-lg font-bold hover:bg-red-700 transition-all shadow-lg"
+              className="bg-[#FF8C00] text-white px-10 py-4 rounded-md text-lg font-bold hover:bg-orange-600 transition-all shadow-lg"
             >
               Contact Sales Team
             </button>

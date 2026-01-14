@@ -86,7 +86,7 @@ const CalculatorsPage: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-[#CC0000] font-bold text-sm uppercase tracking-widest mb-2">Our Products</h2>
+          <h2 className="text-[#FF8C00] font-bold text-sm uppercase tracking-widest mb-2">Our Products</h2>
           <h1 className="text-4xl font-bold text-gray-900 mb-6">ACHE Spares</h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
             AFTS specializes in the sourcing and supply of high-quality Air Cooled Heat Exchanger (ACHE) spares,
@@ -94,16 +94,16 @@ const CalculatorsPage: React.FC = () => {
             for quality control.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <div className="flex items-center space-x-2 bg-red-50 px-4 py-2 rounded-full">
-              <CheckCircle2 className="w-5 h-5 text-[#CC0000]" />
+            <div className="flex items-center space-x-2 bg-orange-50 px-4 py-2 rounded-full">
+              <CheckCircle2 className="w-5 h-5 text-[#FF8C00]" />
               <span className="font-semibold text-gray-700">AVL Compliant</span>
             </div>
-            <div className="flex items-center space-x-2 bg-red-50 px-4 py-2 rounded-full">
-              <CheckCircle2 className="w-5 h-5 text-[#CC0000]" />
+            <div className="flex items-center space-x-2 bg-orange-50 px-4 py-2 rounded-full">
+              <CheckCircle2 className="w-5 h-5 text-[#FF8C00]" />
               <span className="font-semibold text-gray-700">Quality Inspected</span>
             </div>
-            <div className="flex items-center space-x-2 bg-red-50 px-4 py-2 rounded-full">
-              <CheckCircle2 className="w-5 h-5 text-[#CC0000]" />
+            <div className="flex items-center space-x-2 bg-orange-50 px-4 py-2 rounded-full">
+              <CheckCircle2 className="w-5 h-5 text-[#FF8C00]" />
               <span className="font-semibold text-gray-700">Fast Delivery</span>
             </div>
           </div>
@@ -116,10 +116,10 @@ const CalculatorsPage: React.FC = () => {
             {productCategories.map((category, index) => (
               <div
                 key={index}
-                className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-[#CC0000] transition-all group"
+                className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-[#FF8C00] transition-all group"
               >
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center text-[#CC0000] group-hover:bg-[#CC0000] group-hover:text-white transition-colors flex-shrink-0">
+                  <div className="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center text-[#FF8C00] group-hover:bg-[#FF8C00] group-hover:text-white transition-colors flex-shrink-0">
                     {category.icon}
                   </div>
                   <div>
@@ -149,8 +149,8 @@ const CalculatorsPage: React.FC = () => {
           <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Additional Services</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white border-2 border-gray-200 rounded-lg p-8 text-center">
-              <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Wrench className="w-8 h-8 text-[#CC0000]" />
+              <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Wrench className="w-8 h-8 text-[#FF8C00]" />
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-3">Fin Cleaning Services</h4>
               <p className="text-gray-600 mb-4">Professional cleaning services for optimal ACHE performance</p>
@@ -158,13 +158,13 @@ const CalculatorsPage: React.FC = () => {
                 Coming Soon
               </span>
             </div>
-            <div className="bg-white border-2 border-[#CC0000] rounded-lg p-8 text-center">
-              <div className="w-16 h-16 bg-[#CC0000] rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white border-2 border-[#FF8C00] rounded-lg p-8 text-center">
+              <div className="w-16 h-16 bg-[#FF8C00] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Package className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-3">Custom Orders</h4>
               <p className="text-gray-600 mb-4">Need a specific component? Contact us for custom procurement</p>
-              <button className="bg-[#CC0000] text-white px-6 py-2 rounded-md font-semibold hover:bg-red-700 transition-colors">
+              <button className="bg-[#FF8C00] text-white px-6 py-2 rounded-md font-semibold hover:bg-orange-600 transition-colors">
                 Get Quote
               </button>
             </div>

@@ -38,7 +38,7 @@ const App: React.FC = () => {
                   The company was established with an aim to address a notable gap in the market for Air-Cooled Heat Exchanger (ACHE) spares and specialized services including finned tube replacements.
                 </p>
                 <h2 className="text-2xl font-bold text-gray-900 pt-4">Mission</h2>
-                <p className="bg-red-50 p-6 rounded-lg border-l-4 border-[#CC0000] italic">
+                <p className="bg-orange-50 p-6 rounded-lg border-l-4 border-[#FF8C00] italic">
                   To ensure the supply of cost-effective Air Cooled Heat Exchanger (ACHE) spares and services to clients all over the world within the shortest possible timeframe.
                 </p>
               </div>
@@ -56,7 +56,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col font-sans selection:bg-red-100 selection:text-[#CC0000]">
+    <div className="min-h-screen flex flex-col font-sans selection:bg-orange-100 selection:text-[#FF8C00]">
       <Navbar currentPage={currentPage} onPageChange={setCurrentPage} />
 
       <main className="flex-grow">

@@ -26,7 +26,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onPageChange }) => {
           {/* Logo - Left */}
           <div className="flex items-center flex-shrink-0">
             <div
-              className="flex items-center cursor-pointer"
+              className="flex items-center cursor-pointer space-x-3"
               onClick={() => onPageChange(Page.Home)}
             >
               <img
@@ -34,6 +34,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onPageChange }) => {
                 alt="AFTS - Air-Fin Technical Services"
                 className="h-12 sm:h-14 w-auto"
               />
+              <span className="text-xl sm:text-2xl font-bold text-gray-900">Air-Fin Tech</span>
             </div>
           </div>
 
@@ -44,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onPageChange }) => {
                 key={item.value}
                 onClick={() => onPageChange(item.value)}
                 className={`inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 transition-colors ${currentPage === item.value
-                  ? 'border-[#CC0000] text-[#CC0000]'
+                  ? 'border-[#FF8C00] text-[#FF8C00]'
                   : 'border-transparent text-gray-600 hover:text-gray-900 hover:border-gray-300'
                   }`}
               >
@@ -57,7 +58,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onPageChange }) => {
           <div className="hidden md:flex items-center">
             <button
               onClick={() => onPageChange(Page.Contact)}
-              className="bg-[#CC0000] text-white px-6 py-2 rounded-md text-sm font-semibold hover:bg-red-700 transition-colors flex items-center space-x-2"
+              className="bg-[#FF8C00] text-white px-6 py-2 rounded-md text-sm font-semibold hover:bg-orange-600 transition-colors flex items-center space-x-2"
             >
               <Phone className="w-4 h-4" />
               <span>Get Quote</span>
@@ -88,7 +89,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onPageChange }) => {
                   setIsOpen(false);
                 }}
                 className={`block w-full text-left pl-3 pr-4 py-2 border-l-4 text-base font-medium ${currentPage === item.value
-                  ? 'bg-red-50 border-[#CC0000] text-[#CC0000]'
+                  ? 'bg-orange-50 border-[#FF8C00] text-[#FF8C00]'
                   : 'border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'
                   }`}
               >

@@ -8,7 +8,7 @@ const ServicesPage: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-[#CC0000] font-bold text-sm uppercase tracking-widest mb-2">What We Do</h2>
+                    <h2 className="text-[#FF8C00] font-bold text-sm uppercase tracking-widest mb-2">What We Do</h2>
                     <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Technical Services</h1>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                         Comprehensive ACHE solutions from installation to maintenance, delivered by experienced professionals
@@ -19,12 +19,12 @@ const ServicesPage: React.FC = () => {
                 <section className="mb-20">
                     <div className="bg-gradient-to-r from-red-50 to-white rounded-xl p-8 md:p-12 mb-8">
                         <div className="flex items-center space-x-4 mb-6">
-                            <div className="w-16 h-16 bg-[#CC0000] rounded-lg flex items-center justify-center">
+                            <div className="w-16 h-16 bg-[#FF8C00] rounded-lg flex items-center justify-center">
                                 <Wrench className="w-8 h-8 text-white" />
                             </div>
                             <div>
                                 <h2 className="text-3xl font-bold text-gray-900">Finned Tube Replacement</h2>
-                                <p className="text-[#CC0000] font-semibold">Maximizing Equipment Uptime</p>
+                                <p className="text-[#FF8C00] font-semibold">Maximizing Equipment Uptime</p>
                             </div>
                         </div>
                         <p className="text-gray-600 leading-relaxed mb-6">
@@ -37,8 +37,8 @@ const ServicesPage: React.FC = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div className="bg-white border border-gray-200 rounded-lg p-6">
                             <div className="flex items-center space-x-3 mb-4">
-                                <div className="w-8 h-8 bg-red-50 rounded-full flex items-center justify-center">
-                                    <CheckCircle2 className="w-5 h-5 text-[#CC0000]" />
+                                <div className="w-8 h-8 bg-orange-50 rounded-full flex items-center justify-center">
+                                    <CheckCircle2 className="w-5 h-5 text-[#FF8C00]" />
                                 </div>
                                 <h3 className="font-bold text-gray-900">Inspection & Preparation</h3>
                             </div>
@@ -49,8 +49,8 @@ const ServicesPage: React.FC = () => {
 
                         <div className="bg-white border border-gray-200 rounded-lg p-6">
                             <div className="flex items-center space-x-3 mb-4">
-                                <div className="w-8 h-8 bg-red-50 rounded-full flex items-center justify-center">
-                                    <CheckCircle2 className="w-5 h-5 text-[#CC0000]" />
+                                <div className="w-8 h-8 bg-orange-50 rounded-full flex items-center justify-center">
+                                    <CheckCircle2 className="w-5 h-5 text-[#FF8C00]" />
                                 </div>
                                 <h3 className="font-bold text-gray-900">Tube Removal</h3>
                             </div>
@@ -61,8 +61,8 @@ const ServicesPage: React.FC = () => {
 
                         <div className="bg-white border border-gray-200 rounded-lg p-6">
                             <div className="flex items-center space-x-3 mb-4">
-                                <div className="w-8 h-8 bg-red-50 rounded-full flex items-center justify-center">
-                                    <CheckCircle2 className="w-5 h-5 text-[#CC0000]" />
+                                <div className="w-8 h-8 bg-orange-50 rounded-full flex items-center justify-center">
+                                    <CheckCircle2 className="w-5 h-5 text-[#FF8C00]" />
                                 </div>
                                 <h3 className="font-bold text-gray-900">Fin Inspection & Repair</h3>
                             </div>
@@ -73,8 +73,8 @@ const ServicesPage: React.FC = () => {
 
                         <div className="bg-white border border-gray-200 rounded-lg p-6">
                             <div className="flex items-center space-x-3 mb-4">
-                                <div className="w-8 h-8 bg-red-50 rounded-full flex items-center justify-center">
-                                    <CheckCircle2 className="w-5 h-5 text-[#CC0000]" />
+                                <div className="w-8 h-8 bg-orange-50 rounded-full flex items-center justify-center">
+                                    <CheckCircle2 className="w-5 h-5 text-[#FF8C00]" />
                                 </div>
                                 <h3 className="font-bold text-gray-900">New Tube Installation</h3>
                             </div>
@@ -85,8 +85,8 @@ const ServicesPage: React.FC = () => {
 
                         <div className="bg-white border border-gray-200 rounded-lg p-6">
                             <div className="flex items-center space-x-3 mb-4">
-                                <div className="w-8 h-8 bg-red-50 rounded-full flex items-center justify-center">
-                                    <CheckCircle2 className="w-5 h-5 text-[#CC0000]" />
+                                <div className="w-8 h-8 bg-orange-50 rounded-full flex items-center justify-center">
+                                    <CheckCircle2 className="w-5 h-5 text-[#FF8C00]" />
                                 </div>
                                 <h3 className="font-bold text-gray-900">Final Inspection & Testing</h3>
                             </div>
@@ -101,12 +101,12 @@ const ServicesPage: React.FC = () => {
                 <section className="mb-20">
                     <div className="bg-gradient-to-r from-gray-50 to-white rounded-xl p-8 md:p-12 mb-8">
                         <div className="flex items-center space-x-4 mb-6">
-                            <div className="w-16 h-16 bg-[#CC0000] rounded-lg flex items-center justify-center">
+                            <div className="w-16 h-16 bg-[#FF8C00] rounded-lg flex items-center justify-center">
                                 <Settings className="w-8 h-8 text-white" />
                             </div>
                             <div>
                                 <h2 className="text-3xl font-bold text-gray-900">ACHE / Air-Fin Cooler Erection Services</h2>
-                                <p className="text-[#CC0000] font-semibold">Comprehensive Installation Solutions</p>
+                                <p className="text-[#FF8C00] font-semibold">Comprehensive Installation Solutions</p>
                             </div>
                         </div>
                         <p className="text-gray-600 leading-relaxed mb-6">
@@ -150,12 +150,12 @@ const ServicesPage: React.FC = () => {
                                 items: ['Comprehensive inspection records compilation', 'Test results and operational data documentation', 'System approval and official handover']
                             }
                         ].map((phase, index) => (
-                            <div key={index} className="bg-white border-l-4 border-[#CC0000] rounded-lg p-6 shadow-sm">
+                            <div key={index} className="bg-white border-l-4 border-[#FF8C00] rounded-lg p-6 shadow-sm">
                                 <h3 className="text-xl font-bold text-gray-900 mb-4">{phase.title}</h3>
                                 <ul className="space-y-2">
                                     {phase.items.map((item, i) => (
                                         <li key={i} className="flex items-start space-x-3">
-                                            <CheckCircle2 className="w-5 h-5 text-[#CC0000] flex-shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-[#FF8C00] flex-shrink-0 mt-0.5" />
                                             <span className="text-gray-600">{item}</span>
                                         </li>
                                     ))}
@@ -169,12 +169,12 @@ const ServicesPage: React.FC = () => {
                 <section className="mb-20">
                     <div className="bg-gradient-to-r from-red-50 to-white rounded-xl p-8 md:p-12">
                         <div className="flex items-center space-x-4 mb-6">
-                            <div className="w-16 h-16 bg-[#CC0000] rounded-lg flex items-center justify-center">
+                            <div className="w-16 h-16 bg-[#FF8C00] rounded-lg flex items-center justify-center">
                                 <ClipboardCheck className="w-8 h-8 text-white" />
                             </div>
                             <div>
                                 <h2 className="text-3xl font-bold text-gray-900">Supervision Services</h2>
-                                <p className="text-[#CC0000] font-semibold">Expert ACHE Erection & Trial Run Supervision</p>
+                                <p className="text-[#FF8C00] font-semibold">Expert ACHE Erection & Trial Run Supervision</p>
                             </div>
                         </div>
                         <p className="text-gray-600 leading-relaxed mb-6">
@@ -194,7 +194,7 @@ const ServicesPage: React.FC = () => {
                     <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
                         Contact our technical team to discuss your ACHE service requirements and get a customized solution
                     </p>
-                    <button className="bg-[#CC0000] text-white px-8 py-4 rounded-md text-lg font-bold hover:bg-red-700 transition-colors">
+                    <button className="bg-[#FF8C00] text-white px-8 py-4 rounded-md text-lg font-bold hover:bg-orange-600 transition-colors">
                         Request Service Quote
                     </button>
                 </div>

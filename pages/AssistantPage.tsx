@@ -45,7 +45,7 @@ const AssistantPage: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col h-[700px] border border-gray-100">
           {/* Header */}
-          <div className="bg-[#CC0000] p-6 text-white flex items-center justify-between">
+          <div className="bg-[#FF8C00] p-6 text-white flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
                 <Bot className="w-7 h-7" />
@@ -65,7 +65,7 @@ const AssistantPage: React.FC = () => {
             {messages.map((msg, idx) => (
               <div key={idx} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div className={`flex max-w-[80%] space-x-3 ${msg.role === 'user' ? 'flex-row-reverse space-x-reverse' : ''}`}>
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${msg.role === 'user' ? 'bg-[#333333] text-white' : 'bg-red-100 text-[#CC0000]'}`}>
+                  <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${msg.role === 'user' ? 'bg-[#333333] text-white' : 'bg-orange-100 text-[#FF8C00]'}`}>
                     {msg.role === 'user' ? <User className="w-5 h-5" /> : <Bot className="w-5 h-5" />}
                   </div>
                   <div className={`p-4 rounded-2xl text-sm leading-relaxed shadow-sm ${msg.role === 'user' ? 'bg-[#333333] text-white rounded-tr-none' : 'bg-gray-100 text-gray-800 rounded-tl-none'}`}>
@@ -77,11 +77,11 @@ const AssistantPage: React.FC = () => {
             {isLoading && (
               <div className="flex justify-start">
                 <div className="flex space-x-3">
-                  <div className="w-8 h-8 bg-red-100 text-[#CC0000] rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-orange-100 text-[#FF8C00] rounded-full flex items-center justify-center">
                     <Bot className="w-5 h-5" />
                   </div>
                   <div className="bg-gray-100 p-4 rounded-2xl rounded-tl-none shadow-sm flex items-center space-x-2">
-                    <Loader2 className="w-5 h-5 animate-spin text-[#CC0000]" />
+                    <Loader2 className="w-5 h-5 animate-spin text-[#FF8C00]" />
                     <span className="text-sm text-gray-500 italic">Technical consultant is thinking...</span>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ const AssistantPage: React.FC = () => {
           </div>
 
           {/* Tips Section */}
-          <div className="px-6 py-3 bg-red-50/50 border-t border-red-100 flex items-center space-x-3 text-xs text-red-800/70">
+          <div className="px-6 py-3 bg-orange-50/50 border-t border-orange-100 flex items-center space-x-3 text-xs text-orange-800/70">
             <Info className="w-4 h-4 flex-shrink-0" />
             <p>Ask about: <strong>"L-Foot vs Extruded fins"</strong>, <strong>"Common ACHE vibration causes"</strong>, or <strong>"Tube plugging procedures"</strong>.</p>
           </div>
@@ -101,7 +101,7 @@ const AssistantPage: React.FC = () => {
               <input
                 type="text"
                 placeholder="Ask a technical question..."
-                className="w-full bg-gray-100 border-none rounded-xl py-4 pl-6 pr-14 outline-none focus:ring-2 focus:ring-[#CC0000] text-gray-800"
+                className="w-full bg-gray-100 border-none rounded-xl py-4 pl-6 pr-14 outline-none focus:ring-2 focus:ring-[#FF8C00] text-gray-800"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyPress={(e) => e.key === 'Enter' && handleSend()}
@@ -110,7 +110,7 @@ const AssistantPage: React.FC = () => {
                 onClick={handleSend}
                 disabled={isLoading || !input.trim()}
                 className={`absolute right-2 top-2 w-10 h-10 rounded-lg flex items-center justify-center transition-all ${
-                  input.trim() ? 'bg-[#CC0000] text-white shadow-lg' : 'bg-gray-300 text-gray-500'
+                  input.trim() ? 'bg-[#FF8C00] text-white shadow-lg' : 'bg-gray-300 text-gray-500'
                 }`}
               >
                 <Send className="w-5 h-5" />
