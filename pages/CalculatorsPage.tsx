@@ -7,83 +7,115 @@ const CalculatorsPage: React.FC = () => {
     {
       title: 'Finned Tubes',
       icon: <Settings className="w-6 h-6" />,
-      description: 'High-quality finned tubes for optimal heat transfer'
+      description: 'High-quality finned tubes for optimal heat transfer',
+      image: '/FINNED TUBES.jpg'
     },
     {
       title: 'Headers Boxes',
       icon: <Package className="w-6 h-6" />,
-      description: 'Durable header boxes for ACHE systems'
+      description: 'Durable header boxes for ACHE systems',
+      image: '/ACHE FD & ID.jpg'
     },
     {
       title: 'Plug and Header Gaskets',
       icon: <Settings className="w-6 h-6" />,
-      description: 'Precision-engineered gaskets for leak-free operation'
+      description: 'Precision-engineered gaskets for leak-free operation',
+      image: '/PLUG GASKET.png'
     },
     {
       title: 'Plugs (Single & Double)',
       icon: <Wrench className="w-6 h-6" />,
-      description: 'Reliable plugs for tube sealing'
+      description: 'Reliable plugs for tube sealing',
+      image: '/HEADER PLUGS 2.png'
     },
     {
       title: 'Studs & Fasteners',
       icon: <Settings className="w-6 h-6" />,
-      description: 'High-strength fastening solutions'
+      description: 'High-strength fastening solutions',
+      image: '/PLUG & GASKET.jpg'
     },
     {
       title: 'Tube Bundle Inserts/Turbulators',
       icon: <Package className="w-6 h-6" />,
-      description: 'Enhanced heat transfer components'
+      description: 'Enhanced heat transfer components',
+      image: '/TB 2.jpg'
     },
     {
       title: 'Bearing Blocks',
       icon: <Wrench className="w-6 h-6" />,
-      description: 'Forced & Induced bearing blocks'
+      description: 'Forced & Induced bearing blocks',
+      image: '/BEARING BLOCK 1.jpg'
     },
     {
       title: 'Belts & Pulleys',
       icon: <Settings className="w-6 h-6" />,
-      description: 'Precision drive components'
+      description: 'Precision drive components',
+      image: '/BELTS 3.jpg'
     },
     {
       title: 'Fans and Motors',
       icon: <Package className="w-6 h-6" />,
-      description: 'High-performance cooling systems'
+      description: 'High-performance cooling systems',
+      image: '/FAN 1.jpg'
     },
     {
       title: 'Anti-Rotation Devices',
       icon: <Wrench className="w-6 h-6" />,
-      description: 'Secure mounting solutions'
+      description: 'Secure mounting solutions',
+      image: '/ANTI ROTATION DEVICE.png'
     },
     {
       title: 'Louvers',
       icon: <Settings className="w-6 h-6" />,
-      description: 'Airflow control components'
+      description: 'Airflow control components',
+      image: '/ACHE 2.png'
     },
     {
       title: 'ACHE Support Structures',
       icon: <Package className="w-6 h-6" />,
-      description: 'Robust structural components'
+      description: 'Robust structural components',
+      image: '/ACHE 4.png'
     },
     {
       title: 'Motor Suspension Assemblies',
       icon: <Wrench className="w-6 h-6" />,
-      description: 'Vibration-dampening mounting systems'
+      description: 'Vibration-dampening mounting systems',
+      image: '/FAN MOTOR & PULLEYS.jpg'
     },
     {
       title: 'Plenum Chambers',
       icon: <Settings className="w-6 h-6" />,
-      description: 'Conical & Box Type configurations'
+      description: 'Conical & Box Type configurations',
+      image: '/CONICAL PLENUM 1.jpg'
     },
     {
       title: 'Guards',
       icon: <Package className="w-6 h-6" />,
-      description: 'Fin, Fan & Pulley safety guards'
+      description: 'Fin, Fan & Pulley safety guards',
+      image: '/ACHE 3.jpg'
     }
   ];
 
   return (
     <div className="pt-32 pb-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Hero Image Section */}
+        <div className="mb-16 rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative h-96">
+            <img
+              src="/ACHE 5.jpg"
+              alt="ACHE Components and Spares"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent flex items-center">
+              <div className="max-w-2xl px-8 md:px-12">
+                <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Premium ACHE Spares</h1>
+                <p className="text-xl text-gray-200">Quality-inspected components from approved vendors, delivered on time</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-[#FF8C00] font-bold text-sm uppercase tracking-widest mb-2">Our Products</h2>
@@ -116,15 +148,27 @@ const CalculatorsPage: React.FC = () => {
             {productCategories.map((category, index) => (
               <div
                 key={index}
-                className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-[#FF8C00] transition-all group"
+                className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg hover:border-[#FF8C00] transition-all group"
               >
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center text-[#FF8C00] group-hover:bg-[#FF8C00] group-hover:text-white transition-colors flex-shrink-0">
-                    {category.icon}
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-gray-900 mb-2">{category.title}</h4>
-                    <p className="text-sm text-gray-600">{category.description}</p>
+                {/* Product Image */}
+                <div className="h-48 overflow-hidden bg-gray-100">
+                  <img
+                    src={category.image}
+                    alt={category.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+
+                {/* Product Info */}
+                <div className="p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center text-[#FF8C00] group-hover:bg-[#FF8C00] group-hover:text-white transition-colors flex-shrink-0">
+                      {category.icon}
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 mb-2">{category.title}</h4>
+                      <p className="text-sm text-gray-600">{category.description}</p>
+                    </div>
                   </div>
                 </div>
               </div>

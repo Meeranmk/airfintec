@@ -6,6 +6,23 @@ const ServicesPage: React.FC = () => {
     return (
         <div className="pt-32 pb-24 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                {/* Hero Image Section */}
+                <div className="mb-16 rounded-2xl overflow-hidden shadow-2xl">
+                    <div className="relative h-96">
+                        <img
+                            src="/REFINERY 1.jpg"
+                            alt="ACHE Installation at Refinery"
+                            className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center">
+                            <div className="max-w-2xl px-8 md:px-12">
+                                <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Professional ACHE Services</h1>
+                                <p className="text-xl text-gray-200">Expert installation, maintenance, and supervision for Air Cooled Heat Exchangers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-[#FF8C00] font-bold text-sm uppercase tracking-widest mb-2">What We Do</h2>
@@ -32,6 +49,13 @@ const ServicesPage: React.FC = () => {
                             this is a specialized industrial maintenance process for Air Cooled heat exchangers. The job involves replacing degraded
                             or corroded finned tubes to restore equipment functionality and extend its lifespan.
                         </p>
+
+                        {/* Image Gallery */}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                            <img src="/FINNED TUBES.jpg" alt="Finned Tubes" className="w-full h-48 object-cover rounded-lg shadow-md" />
+                            <img src="/TTS 2.jpg" alt="TTS Welding Process" className="w-full h-48 object-cover rounded-lg shadow-md" />
+                            <img src="/TTS 4.jpg" alt="Tube Installation" className="w-full h-48 object-cover rounded-lg shadow-md" />
+                        </div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -113,10 +137,16 @@ const ServicesPage: React.FC = () => {
                             Our specialists provide comprehensive Air Cooled Heat Exchanger (ACHE) services. We leverage our team's deep expertise
                             to deliver efficient, precise installation and seamless startup procedures tailored to your project requirements.
                         </p>
-                        <p className="text-gray-600 leading-relaxed">
+                        <p className="text-gray-600 leading-relaxed mb-6">
                             This involves the systematic installation of the unit's mechanical, structural, and electrical components, followed by
                             functional testing and final operational checks to ensure the system performs according to design specifications.
                         </p>
+
+                        {/* Image Gallery */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <img src="/ACHE GA 2.jpg" alt="ACHE General Assembly" className="w-full h-64 object-cover rounded-lg shadow-md" />
+                            <img src="/ERECTION 1.jpg" alt="ACHE Erection Process" className="w-full h-64 object-cover rounded-lg shadow-md" />
+                        </div>
                     </div>
 
                     <div className="space-y-6">

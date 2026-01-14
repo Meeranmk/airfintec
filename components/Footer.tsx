@@ -21,8 +21,7 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
                 className="h-12 w-auto"
               />
               <span className="text-xl sm:text-2xl font-bold">
-                <span className="text-orange-500">Air-Fin</span>
-                <span className="text-blue-400"> Tech</span>
+                <span className="text-orange-500">Airfintec</span>
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
