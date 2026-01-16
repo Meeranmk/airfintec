@@ -53,8 +53,8 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
               </div>
               <div className="w-px h-8 sm:h-10 bg-white/20"></div>
               <div className="text-center">
-                <p className="text-2xl sm:text-3xl font-bold">Global</p>
-                <p className="text-xs sm:text-sm uppercase tracking-wider">Reach</p>
+                <p className="text-2xl sm:text-3xl font-bold">Emergency</p>
+                <p className="text-xs sm:text-sm uppercase tracking-wider">Tube plugging supports</p>
               </div>
               <div className="w-px h-8 sm:h-10 bg-white/20"></div>
               <div className="text-center">

@@ -43,7 +43,7 @@ const App: React.FC = () => {
                 </p>
               </div>
               <div>
-                <img src="https://picsum.photos/seed/factory/800/600" alt="Factory" className="rounded-xl shadow-lg" />
+                <img src="/REFINERY 1.jpg" alt="Refinery" className="rounded-xl shadow-lg" />
               </div>
             </div>
           </div>
